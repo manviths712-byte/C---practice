@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    string str = "swwiiss";
+    bool found = false;
+
+    for(int i=0; i<str.length();i++){
+        int count =0;
+    
+    for(int j=0;j<str.length();j++){
+        if(str[i]==str[j]){
+            count++;
+        }
+    }
+    if(count == 1){
+        cout<<"Non repeating Character"<<str[i]<<endl;
+        found = true;
+        break;
+    }
+}
+
+    if(!found){
+        cout<<"No non repeating cahracters ";
+    
+}
+return 0;
+}
