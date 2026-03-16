@@ -1,0 +1,23 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main(){
+    string str = "aman@123";
+    string result = "";
+   
+
+    for(char ch:str){
+
+        if(!isdigit(ch)){
+            result += ch;
+        }
+
+        
+    }
+
+       
+    cout<<"Result ="<<result<<endl;
+    
+    return 0;
+}
