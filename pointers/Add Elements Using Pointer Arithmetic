@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int arr[4] = {5,10,15,20};
+    int *ptr = arr;
+    int sum = 0;
+
+    for(int i=0;i<4;i++){
+        sum += *(ptr + i);
+    }
+
+    cout << "Sum = " << sum << endl;
+
+    return 0;
+}
