@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num, fact = 1;
+
+    cout << "Enter number: ";
+    cin >> num;
+
+    int *ptr = &num;
+
+    for(int i = 1; i <= *ptr; i++){
+        fact = fact * i;
+    }
+
+    cout << "Factorial = " << fact;
+
+    return 0;
+}
