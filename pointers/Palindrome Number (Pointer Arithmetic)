@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num, temp, rev = 0;
+
+    cout << "Enter number: ";
+    cin >> num;
+
+    int *ptr = &num;
+
+    temp = *ptr;
+
+    while(temp != 0){
+        int digit = temp % 10;
+        rev = rev * 10 + digit;
+        temp = temp / 10;
+    }
+
+    if(rev == *ptr)
+        cout << "Palindrome";
+    else
+        cout << "Not Palindrome";
+
+    return 0;
+}
