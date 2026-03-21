@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int maxNumber(int *a, int *b){
+   if(*a > *b){
+      return *a;
+   }
+   else{
+      return *b;
+   }
+}
+   
+   int main(){
+    
+     int x=7,y=16;
+
+     int result = maxNumber(&x,&y);
+
+     cout<<"Max ="<<result<<endl;
+
+      return 0;
+
+
+
+   }
+
